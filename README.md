@@ -1,30 +1,24 @@
 <div align="center">
-	<a href="https://frappe.io/lending">
-		<img src=".github/lending-logo.png" height="80px" width="80px" alt="Frappe Lending Logo">
+	<a href="https://thinknxg.com">
+		<img src="https://thinknxg.com/wp-content/uploads/2023/12/favicon.svg1-01.png" height="128" alt="thinkNXG Lending Logo">
 	</a>
-	<h2>Frappe Lending</h2>
+	<h2>thinkNXG Lending</h2>
 	<p align="center">
-		<p>Open Source loan management system</p>
+		<p>Loan management system for thinkNXG ERP</p>
 	</p>
-
-[![CI](https://github.com/frappe/lending/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/frappe/lending/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/frappe/lending/branch/develop/graph/badge.svg?token=0TwvyUg3I5)](https://codecov.io/gh/frappe/lending)
-
 </div>
 
 <div align="center">
-	<img src=".github/lending-hero.png"/>
-</div>
-
-<div align="center">
-	<a href="https://frappe.io/lending">Website</a>
+	<a href="https://thinknxg.com">Website</a>
 	-
-	<a href="https://docs.frappe.io/lending/introduction">Documentation</a>
+	<a href="https://docs.thinknxg.com/thinknxgerp">Documentation</a>
+	-
+	<a href="https://thinknxg.com/support">Support</a>
 </div>
 
-## Frappe Lending
+## thinkNXG Lending
 
-Frappe Lending is a comprehensive Loan Management System (LMS) designed to streamline and automate the entire loan lifecycle, from loan origination to closure. Built on ERPNext and Frappe Framework, an open-source low-code platform, it provides financial institutions, NBFCs, and lenders with the tools they need to efficiently manage loans while ensuring compliance and reducing operational overhead.
+thinkNXG Lending is a comprehensive Loan Management System (LMS) designed to streamline and automate the entire loan lifecycle, from loan origination to closure. Built on thinkNXG ERP and thinkNXG Framework, it provides financial institutions, NBFCs, and lenders with the tools they need to efficiently manage loans while ensuring compliance and reducing operational overhead.
 
 
 ## Key Features
@@ -40,30 +34,41 @@ Frappe Lending is a comprehensive Loan Management System (LMS) designed to strea
 
 ## Under the Hood
 
-1. [**ERPNext**](https://github.com/frappe/erpnext): ERPNext is business management software that helps companies stay on top of their operations, whether it’s tracking inventory, managing finances, handling projects, or keeping customers happy.
+1. [**thinkNXG ERP**](https://github.com/thinknxg/thinkNXG-ERP-M/tree/version-16): Business management software that helps companies stay on top of their operations, whether it's tracking inventory, managing finances, handling projects, or keeping customers happy. Documentation: https://docs.thinknxg.com/thinknxgerp
 
-2. [**Frappe Framework**](https://github.com/frappe/frappe): A full-stack web application framework written in Python and Javascript. The framework provides a robust foundation for building web applications, including a database abstraction layer, user authentication, and a REST API.
-
-
-## Contributing
-
-1. [Issue Guidelines](https://github.com/frappe/erpnext/wiki/Issue-Guidelines)
-1. [Report Security Vulnerabilities](https://erpnext.com/security)
-1. [Pull Request Requirements](https://github.com/frappe/erpnext/wiki/Contribution-Guidelines)
+2. [**thinkNXG Framework**](https://github.com/thinknxg/thinkNXG/tree/version-16): A full-stack web application framework written in Python and Javascript, providing a database abstraction layer, user authentication, and a REST API. Documentation: https://docs.thinknxg.com/thinknxgframework
 
 
-## Logo and Trademark Policy
+## Installation
 
-Please read our [Logo and Trademark Policy](TRADEMARK_POLICY.md).
+### thinkNXG Cloud
 
-<br />
-<br />
-<div align="center" style="padding-top: 0.75rem;">
-	<a href="https://frappe.io" target="_blank">
-		<picture>
-			<source media="(prefers-color-scheme: dark)" srcset="https://frappe.io/files/Frappe-white.png">
-			<img src="https://frappe.io/files/Frappe-black.png" alt="Frappe Technologies" height="28"/>
-		</picture>
-	</a>
-</div>
+thinkNXG Lending can be deployed on [thinkNXG Cloud](https://thinknxgcloud.com/). See the [thinkNXG Cloud documentation](https://docs.thinknxg.com/thinknxgcloud).
 
+### Manual Installation
+
+1. Install bench.
+2. Install [thinkNXG ERP](https://github.com/thinknxg/thinkNXG-ERP-M/tree/version-16) (version-16).
+3. Add the lending app to your bench:
+
+	```sh
+	$ bench get-app https://github.com/thinknxg/thinkNXG-LENDING --branch version-16
+	```
+4. Install the lending app on the required site:
+
+	```sh
+	$ bench --site sitename install-app lending
+	```
+
+
+## Help and Support
+
+- Documentation: https://docs.thinknxg.com/thinknxgerp
+- Support: https://thinknxg.com/support
+
+
+## License
+
+GNU GPL V3 (see [license.txt](license.txt)).
+
+The Lending code is licensed as GNU General Public License (v3) and the copyright is owned by Frappe Technologies Pvt Ltd (Frappe) and Contributors.

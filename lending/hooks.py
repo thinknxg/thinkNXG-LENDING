@@ -1,8 +1,8 @@
 app_name = "lending"
-app_title = "Lending"
-app_publisher = "Frappe Technologies Pvt. Ltd."
-app_description = "Open Source Lending software"
-app_email = "contact@frappe.io"
+app_title = "thinkNXG Lending"
+app_publisher = "thinkNXG Technologies Pvt. Ltd."
+app_description = "thinkNXG Lending software"
+app_email = "sales@kreatao.com"
 app_license = "GNU General Public License (v3)"
 required_apps = ["erpnext"]
 app_logo_url = "/assets/lending/images/frappe-lending-logo.svg"
@@ -11,7 +11,7 @@ add_to_apps_screen = [
 	{
 		"name": "lending",
 		"logo": "/assets/lending/images/frappe-lending-logo.svg",
-		"title": "Lending",
+		"title": "thinkNXG Lending",
 		"route": "/app/lending",
 		"has_permission": "lending.utils.check_app_permission",
 	}
