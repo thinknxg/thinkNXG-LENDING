@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://thinknxg.com">
-		<img src="https://thinknxg.com/wp-content/uploads/2023/12/favicon.svg1-01.png" height="128" alt="thinkNXG Lending Logo">
+		<img src=".github/lending-logo.png" height="80px" width="80px" alt="thinkNXG Lending Logo">
 	</a>
 	<h2>thinkNXG Lending</h2>
 	<p align="center">
